@@ -59,8 +59,8 @@
 			<version>1.4</version>
 		</dependency>
 
-		<!-- Mybitis 사용시 추가 ㅡ-->
-		<!-- MyBatis -->
+		<!-- Mybitis 사용시 추가 -->
+		<!-- MyBatis-->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>

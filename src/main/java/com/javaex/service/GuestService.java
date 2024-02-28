@@ -18,7 +18,9 @@ public class GuestService {
 	//메소드-gs
 	//메소드-일반
 	//리스트 불러오기
-	public List<GuestVo> exeSelect() {
+	public List<GuestVo> exeList() {
+		System.out.println("GuestService.exeList");
+		
 		//Dao연결
 		List<GuestVo> guestList = guestDao.select();
 		
@@ -26,22 +28,22 @@ public class GuestService {
 	}
 	
 	//등록
-	public int exeInsert(GuestVo guestVo) {
-		//DB연결
-		int count = guestDao.insert(guestVo);
-		return count;
-	}
-	//삭제폼
-//	public GuestVo exeDform(int no) {
+//	public int exeInsert(GuestVo guestVo) {
 //		//DB연결
-//		GuestVo guestVo =guestDao.dform(no);
-
-//		return guestVo;
+//		int count = guestDao.insert(guestVo);
+//		return count;
 //	}
-	//삭제
-	public int exeDelete(GuestVo guestVo) {
-		//DB연결
-		int count = guestDao.delete(guestVo);
-		return count;
-	}
+//	//삭제폼
+////	public GuestVo exeDform(int no) {
+////		//DB연결
+////		GuestVo guestVo =guestDao.dform(no);
+//
+////		return guestVo;
+////	}
+//	//삭제
+//	public int exeDelete(GuestVo guestVo) {
+//		//DB연결
+//		int count = guestDao.delete(guestVo);
+//		return count;
+//	}
 }
