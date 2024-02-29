@@ -28,11 +28,11 @@ public class GuestService {
 	}
 	
 	//등록
-//	public int exeInsert(GuestVo guestVo) {
-//		//DB연결
-//		int count = guestDao.insert(guestVo);
-//		return count;
-//	}
+	public int exeInsert(GuestVo guestVo) {
+		//DB연결
+		int count = guestDao.insert(guestVo);
+		return count;
+	}
 //	//삭제폼
 ////	public GuestVo exeDform(int no) {
 ////		//DB연결
